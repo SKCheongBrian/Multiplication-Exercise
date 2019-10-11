@@ -41,12 +41,12 @@ def main():
                         break
                     except ValueError:
                         print("Bro please enter a number!")
-        if count == 0: 
-            print(f"Congratulations! You completed all {numOfQ} questions perfectly!")
-        elif count == 1:
-            print(f"Congratulations! You completed all {numOfQ} questions, you were only wrong {count} time. Nice try!")
-        elif count >1:
-            print(f"Congratulations! You completed all {numOfQ} questions, you were wrong {count} times. Try harder next time!")
+    if count == 0: 
+        print(f"Congratulations! You completed all {numOfQ} questions perfectly!")
+    elif count == 1:
+        print(f"Congratulations! You completed all {numOfQ} questions, you were only wrong {count} time. Nice try!")
+    elif count >1:
+        print(f"Congratulations! You completed all {numOfQ} questions, you were wrong {count} times. Try harder next time!")
 
 
 def nice():
