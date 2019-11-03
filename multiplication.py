@@ -13,6 +13,7 @@ def main():
 
     #create loop with number of questions and get random 2 numbers to multiply tgt
     for i in range(numOfQ):
+        quesN = i+1
         firstN = random.randint(1,12)
         secondN = random.randint(1,12)
 
@@ -20,7 +21,7 @@ def main():
         #now get student's response
         while True:
             try:
-                stuAns = int(input(f"What is {firstN} multiplied by {secondN}?: "))
+                stuAns = int(input(f"Q{quesN}: What is {firstN} multiplied by {secondN}?: "))
                 break
             except ValueError:
                 print("Bro please enter a number!")
@@ -37,7 +38,7 @@ def main():
                 print("Wrong!")
                 while True:
                     try:
-                        stuAns = int(input(f"What is {firstN} multiplied by {secondN}?: "))
+                        stuAns = int(input(f"Q{quesN}: What is {firstN} multiplied by {secondN}?: "))
                         break
                     except ValueError:
                         print("Bro please enter a number!")
